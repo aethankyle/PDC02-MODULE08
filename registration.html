@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <form name="myForm" onsubmit="return(validate());">
+
+            <div class="row">
+                <label><h3>Employee Registration Form</h3></label>
+                </div>
+            
+
+            <div class="row">
+                <label>Employee ID</label>
+                <input type="text,number" name="ID"/><br>
+                <div class="error" id="nameErr"></div>
+            </div>
+            <div class="row">
+                <label>First Name</label>
+                <input type="text" name="firstname"/><br>
+                <div class="error" id="nameErr"></div>
+            </div>
+            <div class="row">
+                <label>Last Name</label>
+                <input type="text" name="lastname"/><br>
+                <div class="error" id="nameErr"></div>
+            </div>
+
+            <div ng-app="">
+                <label>Address</label>
+                <input type="text" name="address" ng-model="address" required/>
+
+            </div>
+
+            
+                
+            <div ng-app="">
+                <label>Department</label>
+                <input type="text" name="address" ng-model="address" required/>
+
+            </div>
+
+            <div ng-app="">
+                <label>Position</label>
+                <input type="text" name="address" ng-model="address" required/>
+
+            </div>
+
+        
+
+                     <div class="row">
+                    <label>Email </label>
+                    <input type="text" name="email"/><br>
+                    <div class="error" id="emailErr"></div>
+
+                    <div ng-app="">
+                        <label>Contact Number</label>
+                        <input type="number" name="address" ng-model="address" required/>
+        
+                    </div>
+                        <div class="row">
+                            <label>Salary</label>
+                            <input type="number" name="Salary"/><br>
+                            <div class="error" id="emailErr"></div>
+
+                            <div class="row">
+                                <label>Username</label>
+                                <input type="text" name="Position"/><br>
+                                <div class="error" id="emailErr"></div>
+
+            
+
+            <input type="submit" value="Submit"/>
+            <script type="text/javascript" src="validation.js"></script>
+        </form>
+
+    </body>
+</html>
